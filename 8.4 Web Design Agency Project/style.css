@@ -10,6 +10,32 @@ body {
   flex: 1;
 }
 
+.card {
+  width: 45%;
+}
+
+
+.left > img {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.right > img {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
 h1 {
   font-size: 5rem;
 }
@@ -17,5 +43,29 @@ h1 {
 footer {
   text-align: right;
   color: midnightblue;
+}
+
+@media (max-width: 680px){
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+  }
+  .tile-image {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline;
+    object-fit: cover;
+  }
 }
 
